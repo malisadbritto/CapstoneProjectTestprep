@@ -1,0 +1,22 @@
+
+https://developer.okta.com/blog/2019/02/12/secure-angular-login
+
+Okta  account
+https://dev-519007-admin.okta.com/dev/console
+
+userid -malisadbritto@gmail.com
+password- M@lisa27
+security question food least like as child
+ans vegetables
+
+
+
+
+ANgular With Material design 
+
+ng add @angular/material  --choose the color theme.
+
+npm install @angular/flex-layout@7.0.0-beta.22 ---On top of Material Design, I will be using Flex Layout components
+
+
+
