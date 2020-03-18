@@ -1,9 +1,8 @@
 
-
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Home Page</title>
+	<title>Our Team</title>
    <!--Made with love by Mutiullah Samim -->
    
 	<!--Bootsrap 4 CDN-->
@@ -13,10 +12,10 @@
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 
 	<!--Custom styles-->
-	<link rel="stylesheet" type="text/css" href="home.component.css">
+	<link rel="stylesheet" type="text/css" href="team.component.css">
 </head>
 <body>
-    <div class="homecontainer">
+    
 <!-- navbar   -->
 <nav class="navbar navbar-expand-lg fixed-top ">  
     <a class="navbar-brand" href="#">Logo</a>
@@ -25,45 +24,52 @@
    </button>
    <div class="collapse navbar-collapse " id="navbarSupportedContent">     <ul class="navbar-nav mr-4">
     <li class="nav-item">
-        <a class="nav-link" data-value="about" routerLink="/login">Login</a> </li>   
+        <a class="nav-link" data-value="about" routerLink="/login">Login</a> </li> 
     <li class="nav-item">  
-          <a class="nav-link " data-value="about"  routerLink="/about">About Us</a></li>     
+            <a class="nav-link " data-value="about"  routerLink="/about">About Us</a></li>    
    <li class="nav-item">  
       <a class="nav-link " data-value="team"  routerLink="/team">Team</a></li>  
    <li class="nav-item"> 
     <a class="nav-link " data-value="contact"  routerLink="/contact">Contact</a>   </li> 
    </ul> 
    </div></nav>
-<!-- Courses -->
-<div class="portfolio">
-    <h1 class="text-center">Courses</h1>
-<div class="container">
- <div class="row">
-  <div class="col-lg-4 col-md-4 col-sm-12">
-     
-   <img src="assets/Images/php.png" class="img-fluid"> 
-  </div>
-  <div class="col-lg-4 col-md-4 col-sm-12">
-    <img src="assets/Images/php.png" class="img-fluid"> 
-  </div>
-  <div class="col-lg-4 col-md-4 col-sm-12">
-    <img src="assets/Images/php.png" class="img-fluid"> 
-  </div>
-     
-<div class="col-lg-4 col-md-4 col-sm-12">
-    <img src="assets/Images/php.png" class="img-fluid"> 
-  </div>
-  <div class="col-lg-4 col-md-4 col-sm-12">
-    <img src="assets/Images/php.png" class="img-fluid"> 
-  </div>
-  <div class="col-lg-4 col-md-4 col-sm-12">
-    <img src="assets/Images/php.png" class="img-fluid"> 
-  </div>
-     
- </div>
-</div>
-</div>
-
+ <!-- Team section -->
+<div class="team">
+    <div class="container">
+       <h1 class="text-center">Our Team</h1>
+     <div class="row">
+      <div class="col-lg-3 col-md-3 col-sm-12 item">
+       <img src="assets/Images/bg.jpg" class="img-fluid" alt="Malisa Dbritto">
+       <div class="des">
+         Malisa
+        </div>
+       <span class="text-muted">Front End Developer</span>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-12 item">
+       <img src="assets/Images/bg.jpg" class="img-fluid" alt="Fenil Lad">
+       <div class="des">
+          Fenil
+        </div>
+       <span class="text-muted">Back End Developer</span>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-12 item">
+       <img src="assets/Images/bg.jpg" class="img-fluid" alt="Maharishi Patel">
+       <div class="des">
+         Maharishi 
+        </div>
+       <span class="text-muted">UI Developer</span>
+      </div>
+      <div class="col-lg-3 col-md-3 col-sm-12 item">
+       <img src="assets/Images/bg.jpg" class="img-fluid" alt="Shivangi Joshi">
+        <div class="des">
+        Shivangi
+        </div>
+       <span class="text-muted">Database Developer</span>
+      </div>
+     </div>
+    </div>
+   </div>
+   
 <!-- Footer -->
 <footer class="page-footer font-small blue">
 
@@ -75,6 +81,6 @@
   
   </footer>
   <!-- Footer -->
-</div>
-</body>
-</html>
+   </body>
+   </html>
+
