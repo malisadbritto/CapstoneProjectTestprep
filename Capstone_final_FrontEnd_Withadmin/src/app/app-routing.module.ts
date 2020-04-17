@@ -9,6 +9,8 @@ import {ContactComponent} from './contact/contact.component';
 import {AboutComponent} from './about/about.component';
 import {QuizComponent} from './quiz/quiz.component';
 import {AdminhomeComponent} from './adminhome/adminhome.component';
+import {QuizFrontComponent} from './quiz-front/quiz-front.component';
+
 const routes: Routes = [
   {path : '', component : HomeComponent},
   { path: 'login', component: LoginComponent },
@@ -19,6 +21,8 @@ const routes: Routes = [
   {path : 'about', component : AboutComponent},
   {path : 'quiz', component : QuizComponent},
   {path : 'adminhome', component : AdminhomeComponent},
+  {path : 'quiz-front', component : QuizFrontComponent},
+
 
 
 ];

@@ -7,7 +7,10 @@
 		height: 100%;
 		font-family: "Open Sans", Helvetica, sans-serif;
 		background-color:black;
+		
 	}
+
+
 	/* body	*/
 
 
@@ -26,7 +29,10 @@
 #content-wrapper {
 	width: auto;
 	margin-left: 200px;
-	background-color: #ffffff;
+
+		background-image: url('/assets/Images/bg2.jpg');
+		background-size: cover;
+		background-repeat:repeat-y;
 	height: 1200px;
     padding: 15px;
     color: wheat;

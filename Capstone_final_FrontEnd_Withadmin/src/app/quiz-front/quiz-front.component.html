@@ -15,10 +15,10 @@
   <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
 	<!--Custom styles-->
-	<link rel="stylesheet" type="text/css" href="home.component.css">
+	<link rel="stylesheet" type="text/css" href="quiz-front.component.css">
 </head>
 <body>
-    <div class="homecontainer">
+    <div class="quizcontainer">
 
 
    <ul class="topnav">
@@ -39,76 +39,68 @@
    <br><br>
 <!-- Courses -->
 
-<h1>Courses</h1>
 <div class="row">
-<div class="card">
-  <img src="/assets/Images/php.png" alt="Denim Jeans" style="width:100%">
-  <h1>PHP Quiz</h1>
-  <p class="price">$19.99</p>
-  <p>Get 30 Multiple Choice Question to prepare for Your PHP Exam. And achive Good score in your Exams</p>
-  <p>Approved By CONESTOGA COLLEGE</p>
-  <p><button>Add to Cart</button></p>
-</div>
+    
+    <div class="container">
+        <h1>Take this free quiz</h1>
+        <form id="quiz">
+            <li>
 
-<div class="card">
-  <img src="/assets/Images/php.png" alt="Denim Jeans" style="width:100%">
-  <h1>PHP Quiz</h1>
-  <p class="price">$19.99</p>
-  <p>Get 30 Multiple Choice Question to prepare for Your PHP Exam. And achive Good score in your Exams</p>
-  <p>Approved By CONESTOGA COLLEGE</p>
-  <p><button>Add to Cart</button></p>
-</div>
+                <h3>CSS Stands for...</h3>
+                
+                <div>
+                    <input type="radio" name="question-1-answers" id="question-1-answers-A" value="A" />
+                    <label for="question-1-answers-A">A) Computer Styled Sections </label>
+                </div>
+                
+                <div>
+                    <input type="radio" name="question-1-answers" id="question-1-answers-B" value="B" />
+                    <label for="question-1-answers-B">B) Cascading Style Sheets</label>
+                </div>
+                
+                <div>
+                    <input type="radio" name="question-1-answers" id="question-1-answers-C" value="C" />
+                    <label for="question-1-answers-C">C) Crazy Solid Shapes</label>
+                </div>
+                
+                <div>
+                    <input type="radio" name="question-1-answers" id="question-1-answers-D" value="D" />
+                    <label for="question-1-answers-D">D) None of the above</label>
+                </div>
+            
+            </li>
 
-<div class="card">
-  <img src="/assets/Images/php.png" alt="Denim Jeans" style="width:100%">
-  <h1>PHP Quiz</h1>
-  <p class="price">$19.99</p>
-  <p>Get 30 Multiple Choice Question to prepare for Your PHP Exam. And achive Good score in your Exams</p>
-  <p>Approved By CONESTOGA COLLEGE</p>
-  <p><button>Add to Cart</button></p>
-</div>
-</div>
-<br>
-<div class="ror">
-  <div class="container">
-    <a routerLink="/quiz-front">
-     <button class = "mb-sm-5 btn btn-success btn-block">Congratulations ! You are eligible for a free test !</button>
-   </a>
-  </div>
-</div>
+            <li>
+
+                <h3>PHP Stands for...</h3>
+                
+                <div>
+                    <input type="radio" name="question-1-answers" id="question-1-answers-A" value="A" />
+                    <label for="question-1-answers-A">A) Computer Styled Sections </label>
+                </div>
+                
+                <div>
+                    <input type="radio" name="question-1-answers" id="question-1-answers-B" value="B" />
+                    <label for="question-1-answers-B">B) Cascading Style Sheets</label>
+                </div>
+                
+                <div>
+                    <input type="radio" name="question-1-answers" id="question-1-answers-C" value="C" />
+                    <label for="question-1-answers-C">C) Crazy Solid Shapes</label>
+                </div>
+                
+                <div>
+                    <input type="radio" name="question-1-answers" id="question-1-answers-D" value="D" />
+                    <label for="question-1-answers-D">D) None of the above</label>
+                </div>
+            
+            </li>
 
 
-<!-- <div class="portfolio">
-  <br>  <br>  <br>
-    <h1 class="text-center">Courses</h1>
-<div class="container">
- <div class="row">
-  <div class="col-lg-4 col-md-4 col-sm-12">
-     
-   <img src="assets/Images/php.png" class="img-fluid"> 
-  </div>
-  <div class="col-lg-4 col-md-4 col-sm-12">
-    <img src="assets/Images/php.png" class="img-fluid"> 
-  </div>
-  <div class="col-lg-4 col-md-4 col-sm-12">
-    <img src="assets/Images/php.png" class="img-fluid"> 
-  </div>
-     
-<div class="col-lg-4 col-md-4 col-sm-12">
-    <img src="assets/Images/php.png" class="img-fluid"> 
-  </div>
-  <div class="col-lg-4 col-md-4 col-sm-12">
-    <img src="assets/Images/php.png" class="img-fluid"> 
-  </div>
-  <div class="col-lg-4 col-md-4 col-sm-12">
-    <img src="assets/Images/php.png" class="img-fluid"> 
-  </div>
-     
- </div>
+            <input type="submit" value="Submit Quiz" class=" btn btn-primary mb-sm-5 mt-sm-5" />
+         </form>
+    </div>
 </div>
-</div> -->
-
-<!-- Footer -->
 
 <footer>
   <section id="footer">

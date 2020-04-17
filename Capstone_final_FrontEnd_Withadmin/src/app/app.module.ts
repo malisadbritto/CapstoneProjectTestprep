@@ -15,6 +15,7 @@ import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import { AdminhomeComponent } from './adminhome/adminhome.component';
 import { QuizComponent } from './quiz/quiz.component';
+import { QuizFrontComponent } from './quiz-front/quiz-front.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { QuizComponent } from './quiz/quiz.component';
     ContactComponent,
     AboutComponent,
     AdminhomeComponent,
-    QuizComponent
+    QuizComponent,
+    QuizFrontComponent
   ],
   imports: [
     BrowserModule,
