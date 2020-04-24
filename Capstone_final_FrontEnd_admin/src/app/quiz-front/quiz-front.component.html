@@ -1,0 +1,59 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home Page</title>
+   
+		<!--Custom styles-->
+	<link rel="stylesheet" type="text/css" href="quiz-front.component.css">
+</head>
+<body>
+    <div class="quizcontainer">
+
+<app-header></app-header>
+
+<div class="row">
+    
+    <div class="container">
+        <h1>Take this free quiz</h1>
+        <form id="quiz">
+            <div *ngFor="let item of quizinfo">
+
+                <h3>{{item.question}}</h3>
+                
+                <div>
+                    <input type="radio" name="question-1-answers" id="question-1-answers-A"  name="option1" value="A" />
+                    <label for="question-1-answers-A">{{item.option1}}</label>
+                </div>
+                
+                <div>
+                    <input type="radio" name="question-1-answers" id="question-1-answers-B"  name="option2" value="B" />
+                    <label for="question-1-answers-B">{{item.option2}}</label>
+                </div>
+                
+                <div>
+                    <input type="radio" name="question-1-answers" id="question-1-answers-C"  name="option3" value="C" />
+                    <label for="question-1-answers-C">{{item.option3}}</label>
+                </div>
+                
+                <div>
+                    <input type="radio" name="question-1-answers" id="question-1-answers-D"   name="option4" value="D" />
+                    <label for="question-1-answers-D">{{item.option4}}</label>
+                </div>
+            
+              </div>
+
+      
+
+            <input type="submit" value="Submit Quiz" class=" btn btn-primary mb-sm-5 mt-sm-5"  (click)="onSubmitQuiz()"/>
+         </form>
+         <p><span *ngIf="submissionmessage.length > 0">{{ submissionmessage }}</span></p>
+    </div>
+</div>
+
+<app-footer></app-footer>
+  <!-- Footer -->
+</div>
+</body>
+</html>

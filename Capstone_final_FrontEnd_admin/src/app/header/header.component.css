@@ -1,0 +1,30 @@
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.808) !important;
+  }
+  
+  ul.topnav li {float: left;}
+  
+  ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  ul.topnav li.right {float: right;}
+  
+body{
+    background-image: url('/assets/Images/bg.jpg');
+    background-size: cover;
+    background-repeat:repeat-y;
+    height: 100%;
+    
+}
+
+

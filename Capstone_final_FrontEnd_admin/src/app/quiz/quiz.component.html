@@ -1,0 +1,89 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="quiz.component.css">
+    </head>
+    <body>
+        <div id="responsive-admin-menu">
+            <div id="responsive-menu">
+                <div class="menuicon">≡</div>
+            </div>
+            
+            <div id="logo"></div>
+        
+            <!--Menu-->
+            <div id="menu">
+              <a routerLink="/adminhome" title="Dashboard"><i class="icon-dashboard"></i><span> 
+                {{email}}</span></a>
+                <a routerLink="/quiz" title="quiz"><i class="icon-bullhorn"></i><span> Quiz</span></a>
+                <a routerLink="/home" title="home"><i class="icon-bullhorn"></i><span> Main website</span></a>
+               </div>
+            <!--Menu-->
+        
+        
+        </div>
+        
+        <div id="content-wrapper" style="background-image:url('/assets/Images/bg.jpg');padding-left: 12em;padding-top: 3em;">
+            <form #quizForm="ngForm">
+                <h2>Add quiz</h2>
+                <div class="row">
+                  
+                  <div class="col-md-8">
+                    <div class="form-group">
+                      <label for="last">Question</label>
+                      <input type="text" class="form-control" placeholder="" id="last" #question="ngModel" [(ngModel)]="users.question" name="question">
+                    </div>
+                  </div>
+                  <!--  col-md-6   -->
+
+                  <div class="col-md-8">
+                    <div class="form-group">
+                      <label for="last">Option 1</label>
+                      <input type="text" class="form-control" placeholder="" id="last" #option1="ngModel" [(ngModel)]="users.option1" name="option1">
+                    </div>
+                  </div>
+                  <!--  col-md-6   -->
+
+                  <div class="col-md-8">
+                    <div class="form-group">
+                      <label for="last">Option  2</label>
+                      <input type="text" class="form-control" placeholder="" id="last" #option2="ngModel" [(ngModel)]="users.option2" name="option2">
+                    </div>
+                  </div>
+                  <!--  col-md-6   -->
+
+                  <div class="col-md-8">
+                    <div class="form-group">
+                      <label for="last">Option 3</label>
+                      <input type="text" class="form-control" placeholder="" id="last" #option3="ngModel" [(ngModel)]="users.option3" name="option3">
+                    </div>
+                  </div>
+                  <!--  col-md-6   -->
+
+                  <div class="col-md-8">
+                    <div class="form-group">
+                      <label for="last">Option 4</label>
+                      <input type="text" class="form-control" placeholder="" id="last" #option4="ngModel" [(ngModel)]="users.option4" name="option4">
+                    </div>
+                  </div>
+                  <!--  col-md-6   -->
+
+                  <div class="col-md-8">
+                    <div class="form-group">
+                      <label for="last">Right Answer</label>
+                      <input type="text" class="form-control" placeholder="" id="last" #answer="ngModel" [(ngModel)]="users.answer" name="answer">
+                    </div>
+                  </div>
+                  <!--  col-md-6   -->
+                </div>
+            
+            
+               
+                <button type="submit" class="btn btn-primary" (click)="OnQuizSubmit(); quizForm.reset()">Submit</button>
+              </form>
+              <p><span *ngIf="errormessage.length > 0">{{ errormessage }}</span></p>
+        </div><!-- Content wrapper ends here-->
+        
+        
+        
+    </body>
+</html>

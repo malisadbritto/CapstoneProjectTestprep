@@ -1,0 +1,26 @@
+/*Portfolio*/
+  
+.price {
+    color: grey;
+    font-size: 22px;
+  }
+  
+.quizcontainer ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.808) !important;
+  }
+  
+  .quizcontainer ul.topnav li {float: left;}
+  
+  .quizcontainer ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+ .quizcontainer  ul.topnav li.right {float: right;}

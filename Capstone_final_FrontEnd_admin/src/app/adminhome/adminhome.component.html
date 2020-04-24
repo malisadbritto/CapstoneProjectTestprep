@@ -1,0 +1,93 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="adminhome.component.css">
+    </head>
+    <body>
+        <div id="responsive-admin-menu">
+            <div id="responsive-menu">
+                <div class="menuicon">≡</div>
+            </div>
+            
+            <div id="logo"></div>
+        
+            <!--Menu-->
+            <div id="menu">
+                <a routerLink="/adminhome" title="Dashboard"><i class="icon-dashboard"></i><span> 
+                    {{email}}</span></a>
+                    <a routerLink="/quiz" title="Quiz"><i class="icon-bullhorn"></i><span> Quiz</span></a>
+                    <a routerLink="/home" title="home"><i class="icon-bullhorn"></i><span> Main website</span></a>
+                    <a routerLink="#" title="messagec"><i class="icon-bullhorn"></i><span> <button type="submit" (click)="getContactInfo()">Messages</button></span></a>
+                    <a routerLink="#" title="messagec"><i class="icon-bullhorn"></i><span> <button type="submit" (click)="getUsersInfo()">users</button></span></a>
+            </div>
+            <!--Menu-->
+        
+        
+        </div>
+        
+        <div id="content-wrapper">
+            <div style="border:1px #e8e8e8 solid;width:49%;float:left;margin:10px 0px 10px 0px">
+                 
+                <div style="padding:8px;font-size:13px;" id="contactmessage">
+                    
+                <table class="table">
+                        <thead class="thead-dark">
+                          <tr>
+                            
+                            <th scope="col">Name</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Subject</th>
+                            <th scope="col">Message</th>
+                            <th scope="col">Action</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr  *ngFor="let item of contactinfo">
+                           
+                            <td>{{item.name}}</td>
+                            <td>{{item.emailfrom}}</td>
+                            <td> {{item.subject}}</td>
+                            <td>{{item.messagedes}}</td>
+                            <td><button class="btn btn-primary"><a [href]="'mailto:' +item.emailfrom+'?subject='+item.subject" target="_blank"  style="color: white;">Send Response</a></button></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                   </div>
+                  
+            </div>
+           
+            <!-- User info block -->
+            <div style="border:1px #e8e8e8 solid;width:49%;float:left;margin:10px 0px 10px 0px">
+                 
+              <div style="padding:8px;font-size:13px;" id="contactmessage">
+                  
+              <table class="table">
+                      <thead class="thead-dark">
+                        <tr>
+                          
+                          <th scope="col">FirstName</th>
+                          <th scope="col">LastName</th>
+                          <th scope="col">Email</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr  *ngFor="let useritem of alluserinfo">
+                         
+                          <td>{{useritem.firstname}}</td>
+                          <td>{{useritem.lastname}}</td>
+                          <td> {{useritem.email}}</td>
+                       
+                         
+                        </tr>
+                      </tbody>
+                    </table>
+                 </div>
+                
+          </div>
+         
+       
+    </div>
+    
+        
+        
+    </body>
+</html>

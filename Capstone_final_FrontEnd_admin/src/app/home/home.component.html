@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home Page</title>
+
+  
+</head>
+
+<body>
+    <div class="homecontainer">
+        <!-- <ul class="topnav">
+            <li class="right"><a routerLink="/login"> <i class="fa fa-fw fa-user"></i><b>{{email}}</b> </a></li>
+            <li class="right"><a routerLink="/contact"><i class="fa fa-fw fa-envelope"></i> Contact</a></li>
+            <li class="right"><a routerLink="/team"><i class="fa fa-users"></i> Team</a></li>
+            <li class="right"><a routerLink="/about"><i class='far fa-address-card'></i> About Us</a></li>
+          
+            <li class="right"><a routerLink="/home"><i class="fa fa-fw fa-home"></i> Home</a></li>
+
+        </ul> -->
+        <app-header></app-header>
+        <br><br>
+        <!-- Courses -->
+
+        <h1>Courses</h1>
+        <div class="row">
+            <div class="card">
+                <img src="/assets/Images/php.png" alt="PHP" style="width:100%">
+                <h1>PHP Quiz</h1>
+                <p class="price">$19.99</p>
+                <p>Get 30 Multiple Choice Question to prepare for Your PHP Exam. And achive Good score in your Exams</p>
+                <p>Conestoga College - Web design and development</p>
+                <p><button class="fa fa-shopping-cart" (click)="pay(19.99)">Add to Cart</button></p>
+            </div>
+
+            <div class="card">
+                <img src="/assets/Images/bigdata.jpg" alt="Big data" style="width:100%">
+                <h1>PHP Quiz</h1>
+                <p class="price">$24.99</p>
+                <p>Get 30 Multiple Choice Question to prepare for Your Big data Exam. And achive Good score in your Exams</p>
+                <p>Conestoga College - Mobile Solution Development</p>
+                <p><button class="fa fa-shopping-cart" (click)="pay(24.99)">Add to Cart</button></p>
+            </div>
+
+            <div class="card">
+                <img src="/assets/Images/mobile.jpg" alt="Mobile" style="width:100%">
+                <h1>PHP Quiz</h1>
+                <p class="price">$32.99</p>
+                <p>Get 30 Multiple Choice Question to prepare for Your Android Exam. And achive Good score in your Exams</p>
+                <p>Conestoga College - Mobile Solution Development</p>
+                <p><button class="fa fa-shopping-cart" (click)="pay(32.99)">Add to Cart</button></p>
+            </div>
+        </div>
+        <br>
+
+        <div class="row">
+            <div class="container">
+              <a routerLink="/quizfront">
+               <button class = "mb-sm-5 btn btn-success btn-block">Congratulations ! You are eligible for a free test !</button>
+             </a>
+            </div>
+          </div>
+
+        <!-- Footer -->
+       <app-footer></app-footer>
+     
+        <!-- Footer -->
+    </div>
+</body>
+
+</html>

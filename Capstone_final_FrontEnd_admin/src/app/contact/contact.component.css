@@ -1,0 +1,26 @@
+
+.container1
+{
+    /* padding-left:20% ; */
+    background-color: rgba(0, 0, 0, 0.507) !important;
+}
+
+
+button{
+    border-radius: 5px;
+    margin-left: 40%;
+
+
+}
+
+body
+{
+    background-image: url('/assets/Images/bg.jpg');
+ 
+}
+
+
+.w3-input
+{
+    border-radius: 5px;
+}

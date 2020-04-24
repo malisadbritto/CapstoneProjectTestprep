@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Us</title>
+
+	<!--Custom styles-->
+  <link rel="stylesheet" type="text/css" href="contact.component.css">
+</head>
+<body class="body1">
+    
+
+<app-header></app-header>
+   <div class="container1">
+   <div class="w3-padding-64 w3-content w3-text-white" id="contact">
+    <h2 class="w3-text-light-white">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Kitchener, Canada</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +16476476471</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email:<a href="mailto:Testprep@gmail.com">Testprep@gmail.com</a> </p>
+    </div><br>
+    <p>Lets get in touch. Send me a message:</p>
+    <p><span *ngIf="infoMessage.length > 0">{{ infoMessage }}</span></p>
+    <form action="/action_page.php" target="_blank" #contactForm="ngForm">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required  #name="ngModel" [(ngModel)]="users.name" name="name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required  #emailfrom="ngModel" [(ngModel)]="users.emailfrom" name="emailfrom"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required #subject="ngModel" [(ngModel)]="users.subject" name="subject"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required #messagedes="ngModel" [(ngModel)]="users.messagedes" name="message"></p>
+      <p>
+        <button class="w3-button w3-white w3-padding-large" type="submit" (click)="OnContactSubmit(); contactForm.reset()">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+      
+    </form>
+  
+  <!-- End Contact Section -->
+  </div>
+</div>
+
+
+
+
+
+<!-- Footer -->
+
+<app-footer></app-footer>
+  <!-- Footer -->
+   </body>
+   </html>
